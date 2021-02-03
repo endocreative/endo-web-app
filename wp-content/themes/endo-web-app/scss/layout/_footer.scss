@@ -1,0 +1,18 @@
+.site-footer {
+  border-top: 1px solid #d9dbe0;
+  padding: 30px 40px 30px;
+  color: #fff;
+  font-size: 0.875em;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #17a7e4;
+  .footer-menu {
+    a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 20px;
+    }
+  }
+}

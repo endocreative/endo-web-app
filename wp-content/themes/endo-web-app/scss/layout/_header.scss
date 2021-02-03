@@ -1,0 +1,56 @@
+.site-branding {
+  background: #fff;
+  padding: 10px 20px;
+  .site-title {
+    text-align: center;
+    font-size: 1.5em;
+    .logo {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      background: url("../images/logo.jpg") no-repeat;
+      background-size: 90px 60px;
+      text-indent: -999999px;
+      width: 90px;
+      height: 60px;
+    }
+  }
+}
+
+.page-template-page-dashboard {
+  .site-branding {
+    .site-title {
+      a {
+        background: url("../images/25offlogo.png") no-repeat;
+        background-size: 175px 33px;
+        width: 175px;
+        height: 33px;
+      }
+    }
+  }
+  .site-header {
+    padding: 14px 30px;
+  }
+}
+
+.site-header {
+  background: #ffffff;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #efefef;
+  align-items: center;
+  // box-shadow: 0 1px 1px 0 rgba(60,75,100,.14), 0 2px 1px -1px rgba(60,75,100,.12), 0 1px 3px 0 rgba(60,75,100,.2);
+}
+
+.secondary-navigation-wrapper {
+  display: flex;
+  align-items: center;
+  a {
+    color: #354258;
+    text-decoration: none;
+  }
+  .sep {
+    margin: 0 8px;
+  }
+}

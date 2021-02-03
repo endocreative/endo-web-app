@@ -1,0 +1,38 @@
+.home-wrapper {
+	width: 100%;
+	.site-header {
+		justify-content: space-between;
+	}
+	.site-branding {
+		background: #fff;
+		padding: 0;
+	}
+	.site-content {
+		margin-top: 0;
+	}
+	.content-area {
+		margin: 0 auto;
+	}
+	.site-main .entry-content {
+		padding: 0;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		h2 {
+			font-family: 'Lato', sans-serif;
+			font-weight: 700;
+		}
+	}
+
+}
+
+#loginform {
+		label {
+			display: block;
+		}
+		.input {
+			width: 100%;
+		}
+		#wp-submit {
+			color: #fff;
+		}
+	}

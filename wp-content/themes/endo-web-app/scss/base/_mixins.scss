@@ -1,0 +1,52 @@
+@mixin breakpoint($point) {
+	@if $point == short {
+		@media (min-width: 30em) { @content; }
+	}
+	@else if $point == tall {
+		@media (min-width: 45em) { @content; }
+	}
+	@else if $point == grande {
+		@media (min-width: 60em) { @content; }
+	}
+	@else if $point == venti {
+		@media (min-width: 100em) { @content; }
+	}
+	@else {
+		@media (min-width: $point) { @content; }
+	}
+}
+
+@mixin transition() {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+@mixin selection($color: #b3d4fc) {
+	::-moz-selection {
+		background: $color;
+		text-shadow: none;
+	}
+	::selection {
+		background: $color;
+		text-shadow: none;
+	}
+}
+
+@mixin tracking($num) {
+	letter-spacing: ( $num / 1000 ) * 1em;
+}
+
+@mixin button() {
+	@include transition();
+	/* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	margin: 0;
+	border: .0625em solid;
+	border-radius: .1875em;
+	/* Improve cursor style usability and consistency between image-type 'input' and others */
+	cursor: pointer;
+	/* Correct font size not being inherited in all browsers */
+	font-size: 100%;
+	/* Improve appearance and consistency in all browsers */
+	vertical-align: baseline;
+}

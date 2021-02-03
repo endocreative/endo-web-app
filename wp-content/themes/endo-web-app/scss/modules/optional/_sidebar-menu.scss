@@ -1,0 +1,34 @@
+.sidebar-menu {
+	display: none;
+
+	@include breakpoint(grande) {
+		display: block;
+		background: url(../images/sidebar-nav-bg.png) top right no-repeat;
+		margin-left: -90px;
+		padding-left: 90px;
+	}
+
+	ul {
+		margin-left: 10px;
+		padding-top: 50px;
+		padding-bottom: 100px;
+
+		li {
+			list-style-type: none;
+
+			a {
+				display: block;
+				padding-left: 20px;
+				color: #633615;
+				line-height: 2;
+				text-decoration: none;
+				text-shadow: 1px 1px 10px #fff;
+
+				&:hover {
+					background: url(../images/active-page-highlight.png) no-repeat;
+					text-shadow: 1px 1px 5px #fff;
+				}
+			}
+		}
+	}
+}

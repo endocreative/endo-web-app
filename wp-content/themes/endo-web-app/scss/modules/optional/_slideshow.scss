@@ -1,0 +1,86 @@
+.slider-wrap {
+	background: url(../images/slideshow-bg.jpg) top center no-repeat;
+	width: 100%;
+}
+
+.slides {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.home-panel {
+	background: url(../images/panel-bg.jpg) no-repeat;
+	margin: 0 auto;
+	max-width: 1280px;
+	@extend .clearfix;
+	li {
+		list-style-type: none;
+		float: left;
+		margin-top: -30px;
+		position: relative;
+		z-index: 999;
+		margin-right: 10px;
+		&:first-child {
+			margin-left: 190px;
+		}
+	}
+}
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.slide img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
+/* in case script does not load */
+.slide img:first-child {
+    position: static; z-index: 100;
+}
+
+
+
+/* prev / next links */
+.cycle-prev, .cycle-next { 
+	position: absolute; 
+	top: 40%; 
+	z-index: 999; 
+	cursor: pointer; 
+	display: none;
+	@include breakpoint(grande) {
+		display: block;
+	}
+}
+.cycle-prev { 
+	left: 5%;  
+	background: url(../images/slide-arrows.png) no-repeat 0 0;
+	width: 59px;
+	height: 77px;
+}
+.cycle-next { 
+	right: 5%; 
+	background: url(../images/slide-arrows.png) no-repeat -74px 0;
+	width: 59px;
+	height: 77px;
+}
+.cycle-prev:hover { 
+	background: url(../images/slide-arrows.png) no-repeat 0 -92px;
+}
+
+.cycle-next:hover {
+	background: url(../images/slide-arrows.png) no-repeat -74px -92px;
+}
+
+.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+    content: 'Paused'; color: white; background: black; padding: 10px;
+    z-index: 500; position: absolute; top: 10px; right: 10px;
+    border-radius: 10px;
+    opacity: .5; filter: alpha(opacity=50);
+}

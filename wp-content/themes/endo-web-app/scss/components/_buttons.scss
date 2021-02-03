@@ -1,0 +1,76 @@
+%button {
+  @include button();
+  /* Corrects inability to style clickable 'input' types in iOS */
+  -webkit-appearance: button;
+  padding: 0.375em 1em;
+  background: #2c29d3;
+  border-color: #ccc;
+  color: inherit;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #d5d5d5;
+  }
+
+  &::-moz-focus-inner {
+    /* Correct oddly displayed inner padding and border in FF3/4 - www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+    border: 0;
+    padding: 0;
+  }
+}
+
+button {
+  @extend %button;
+}
+
+/* Links styled to look like buttons */
+.button {
+  @include button();
+  display: inline-block;
+  padding: 0.75em 2.25em;
+  color: white;
+  border-color: transparent;
+  background: blue;
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+    background: lighten(blue, 10%);
+    text-decoration: none;
+  }
+}
+
+.button-small {
+  padding: 0.25em 0.5em;
+
+  line-height: 1.5;
+}
+
+.tooltip-area {
+  position: relative;
+  .tooltip-button {
+    color: #4f5d73;
+    background-color: #ced2d8;
+    margin-top: 10px;
+    font-size: 0.75em;
+    border-radius: 50px;
+  }
+  .tooltip-message {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    background: #475368;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 0.75em;
+  }
+}

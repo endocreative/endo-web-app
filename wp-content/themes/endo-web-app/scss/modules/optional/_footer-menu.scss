@@ -1,0 +1,21 @@
+.footer-menu {
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 12px;
+
+	ul {
+		margin-left: 0;
+
+		li {
+			list-style-type: none;
+			display: inline;
+			margin-right: 25px;
+
+			a {
+				color: #ffffff;
+				font-size: .875em;
+				text-decoration: none;
+			}
+		}
+	}
+}

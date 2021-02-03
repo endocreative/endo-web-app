@@ -1,0 +1,15 @@
+.box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  .box-content {
+  }
+  .box-title {
+    color: #3c4257;
+    font-size: 0.875em;
+  }
+  .box-amount {
+    font-size: 1.25em;
+  }
+}

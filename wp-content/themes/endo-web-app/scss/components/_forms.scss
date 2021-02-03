@@ -1,0 +1,106 @@
+input,
+select,
+textarea {
+  font-size: 100%; /* Corrects font size not being inherited in all browsers */
+  margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+}
+
+input {
+  &::-moz-focus-inner {
+    /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+    border: 0;
+    padding: 0;
+  }
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  @extend %button;
+  color: #fff;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  /* Address excess padding in IE8/9 */
+  padding: 0;
+}
+
+input[type="search"] {
+  /* Address appearance set to searchfield in S5, Chrome */
+  -webkit-appearance: none;
+  /* Address box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+
+  &::-webkit-search-decoration {
+    /* Correct oddly displayed inner padding in S5, Chrome on OSX */
+    -webkit-appearance: none;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 0.0625em solid #ccc;
+  border-radius: 0.1875em;
+
+  &:focus {
+    color: #111;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+input[type="search"] {
+  padding: 0.1875em;
+}
+
+textarea {
+  /* Remove default vertical scrollbar in IE6/7/8/9 */
+  overflow: auto;
+  width: 100%;
+  resize: vertical;
+  padding-left: 0.1875em;
+  /* Improve readability and alignment in all browsers */
+  vertical-align: top;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 0.875em;
+  }
+  .req {
+    color: red;
+  }
+  .form-control {
+    font-size: 0.875em;
+    display: block;
+    width: 100%;
+    padding: 5px 8px;
+    line-height: 1.5;
+    color: #768192;
+    border: 1px solid #d8dbe0;
+    background: #fff;
+    border-radius: 0.25rem;
+    height: calc(1.5em + 0.75rem + 2px);
+  }
+}
+
+.form-check-inline {
+  display: inline-flex;
+  align-items: center;
+}

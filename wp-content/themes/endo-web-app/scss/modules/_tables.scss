@@ -1,0 +1,30 @@
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	color: #4f5d73;
+	th {
+		vertical-align: bottom;
+	    border-bottom: 2px solid;
+	    border-bottom-color: #d8dbe0;
+	    border-top: 1px solid;
+    	border-top-color: #d8dbe0;
+    	padding: .75em;
+    	text-align: left;
+	}
+	td {
+		padding: .75em;
+		vertical-align: top;
+		border-top: 1px solid;
+		border-top-color: #d8dbe0;
+	}
+
+}
+
+.table-striped {
+	tbody {
+		tr:nth-of-type(odd) {
+			background-color: rgba(0,0,21,.05);
+		}
+	}
+
+}

@@ -1,0 +1,13 @@
+.sidebar {
+	@extend .clearfix;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+
+	@include breakpoint(grande) {
+		float: right;
+		width: 23.625%;
+		overflow: visible;
+		text-align: left;
+	}
+}

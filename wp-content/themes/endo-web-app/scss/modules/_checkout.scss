@@ -1,0 +1,29 @@
+.checkout-wrapper {
+	background: #F4F4F4;
+}
+
+.checkout-inner {
+	max-width: 1185px;
+	margin: 20px auto;
+	.checkout {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+}
+
+.checkout-details-card {
+	width: 25%;
+	background: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #E8E8E8;
+	padding: 1.5rem;
+}
+
+.checkout-form {
+	width: 70%;
+	background: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #E8E8E8;
+	padding: 1.5rem;
+}
